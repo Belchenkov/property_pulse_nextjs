@@ -1,9 +1,12 @@
-const Page = () => {
+import Link from 'next/link';
+
+const HomePage = () => {
     return (
         <div>
-            Home Page
+            <h1 className="text-3xl">Welcome</h1>
+            <Link href="/properties">Show properties</Link>
         </div>
     );
 };
 
-export default Page;
+export default HomePage;
