@@ -1,3 +1,4 @@
+import Navbar from '@/components/Navbar';
 import '@/assets/styles/globals.css';
 
 export const metadata = {
@@ -9,8 +10,15 @@ export const metadata = {
 const MainLayout = ({ children }) => {
     return (
         <html lang='en'>
+            <head>
+                <link rel="preconnect" href="https://fonts.googleapis.com" />
+                <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin />
+                <link href="https://fonts.googleapis.com/css2?family=Anta&display=swap" rel="stylesheet" />
+                <title>Property Pulse</title>
+            </head>
             <body>
-                <div>{children}</div>
+                <Navbar />
+                <main>{children}</main>
             </body>
         </html>
     );
